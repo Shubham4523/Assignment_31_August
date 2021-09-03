@@ -2,19 +2,18 @@
 
 public class Score
 {
-  public static void main(String args[])
-  {
-    int  arr[]={58,64,78,81,97};
-    float total=arr.length*100;
-    float sum=0;
-      for(int i=0;i<arr.length;i++)
-      {
-        sum=sum+arr[i];
-      }	 
-      float avg= sum/arr.length;
-      float prcnt= (sum*100)/total;
-      System.out.println("avg :" +avg);
-      System.out.println("Percentage :"+prcnt);
+ 	public static void main(String args[])
+ 	{
+		int array[]= {56,64,78,84,97};
+		float percent=0;
+		float sum=0;
+		for(int num:array)
+		{
+			sum=sum+num;
+		}
+		percent=(sum*100)/500;
+		System.out.println("Percentage is:"+percent);	
+	}
     }
 }
 
@@ -26,35 +25,35 @@ public class Score
 public class ThreeDArray
 {
 	public static void main(String[] args) 
-  {
+ 	{
 	   int first[][] = {{1,2,3},{1,2,3},{1,2,3}};
 	   int second[][] = {{4,5,6},{4,5,6},{4,5,6}};
 	   int third[][] = {{7,8,9},{7,8,9},{7,8,9}};
 	   int[][] multiply = new int[3][3];
 	   
 	   for(int i=0;i<3;i++)
-     {
+	   {
 	       for(int j=0;j<3;j++)
-         {
+	       {
 	           for(int k=0;k<3;k++)
-             {
+		   {
 	               multiply[j][k]=first[j][k]*second[j][k]*third[j][k];
 	           }
 	       }
 	   }
 	   for(int i=0;i<3;i++)
-     {
+	   {
 	       for(int j=0;j<3;j++)
-         {
+	       {
 	           for(int k=0;k<3;k++)
-             {
+		   {
 	             System.out.print(multiply[j][k]+" ");
 	           }
 	         break;
 	       }
 	       System.out.println();
 	   }      
-  }
+	}
 }
 
 <<<<<<<<<<<<<<<<<------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>

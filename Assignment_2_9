@@ -29,6 +29,36 @@ public class Score
 
 // Sort the array in descending order.
 
+public static void main(String args[])
+    {
+        int array[]={8,2,3,1,6,5,7,4,9,0};
+        
+        System.out.println("Before sort Array ...........!");
+         for(int element: array)
+         {
+             System.out.print(element + " ");
+         }
+         System.out.println();
+         System.out.println("Array in decending order...........!");
+         for(int i=0;i<array.length;i++){
+             for(int j=i+1;j<array.length;j++){
+                 if(array[i]<array[j])
+                 {
+                     int swap=array[i];
+                     array[i]=array[j];
+                     array[j]=swap;
+                 }
+             }
+         }
+         
+          for(int element: array)
+         {
+             System.out.print(element + " ");
+         }
+    }
+    
+}
+
 <<<<<<<<<<<<<<<<<------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>
 
 // Create a variable of type String with following data,
@@ -38,4 +68,23 @@ public class Score
 
 
 // Search for word "Java" and count number of occurrences. 
+
+public class Count{
+    public static void main(String args[])
+    {
+        String str="Java is Object oriented. Java is platform independent.Java is simple.";
+        str.toLowerCase();
+        String str1[]=str.split(" ");
+        String str2="Java";
+        int count = 0;
+        for(int i=0;i<str1.length;i++)
+        {
+		if(str2.equals(str1[i]))
+                {
+                	count++;
+                }            
+        }
+        System.out.println(count);
+    }
+}
 

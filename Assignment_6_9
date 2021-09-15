@@ -1,23 +1,23 @@
 //  Check if given string starts with A and Endwith t
 
+package com.yash.assignment_6_9;
 import java.util.Scanner;
 
-public class CheckStringStartEnd{
-    public static void main(String[] args) 
-    {
-        Scanner sc = new Scanner(System.in);
+public class CheckStringStartEnd {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
         System.out.println("Enter any string : ");
         String inpuString = sc.nextLine();
         int lastIndex = inpuString.length()-1;
         sc.close();
-        if((inpuString.charAt(0) == 'A' || inpuString.charAt(0) == 'a') && (inpuString.charAt(lastIndex) == 'T' || inpuString.charAt(lastIndex) == 't'))
-        {
-                System.out.println("String starts with 'A' and ends with 'T'");
+        if((inpuString.charAt(0) == 'a' || inpuString.charAt(0) == 'A') 
+            && (inpuString.charAt(lastIndex) == 't' || inpuString.charAt(lastIndex) == 'T')){
+                System.out.println("Starts = 'A' \nEnds = 'T'");
         }
-        else
-        {
-            System.out.println("String does not starts with 'A' and ends with 'T'");
+        else{
+            System.out.println("Not starts with 'A' nor ends with 'T'");
         }
-    }
+	}
 }
+
 

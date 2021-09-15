@@ -1,4 +1,4 @@
-//  Check if given string starts with A and Endwith t
+//  Check if given string starts with 'A' and Endwith 'T'
 
 package com.yash.assignment_6_9;
 import java.util.Scanner;
@@ -20,4 +20,38 @@ public class CheckStringStartEnd {
 	}
 }
 
+<<<<<<<<<<<<<<<-------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>
+
+// Program to Mask a string after first two character
+
+package com.yash.assignment_6_9;
+
+public class maskString 
+{
+	public static void main(String[] args)
+	{
+		 String inputString = "SHUBHAM GUPTA";
+	        System.out.println("Masked String : \n" + getMaskedString(inputString));
+	    }
+
+	    public static StringBuilder getMaskedString(String inputString){
+	        String []tokens = inputString.split(" ");
+	        System.out.println("Given String :\n"+inputString);
+
+	        StringBuilder builder = new StringBuilder();
+	        for (String string : tokens) 
+	        {
+	            builder.append(string.substring(0,3));
+	            int maskLength = string.length()-2;
+	            for (int i = 0; i < maskLength; i++) {
+	                builder.append("*");
+	            }
+	            builder.append(" ");
+	        }
+
+	        return builder;
+	    }
+	}
+	
+<<<<<<<<<<<<<<<-------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>	
 

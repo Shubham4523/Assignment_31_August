@@ -1,0 +1,23 @@
+Identify Entities and sub entities ,their attributes and methods in Student Management System. 
+
+
+--> Student Entity: Attributes of students are s_id, s_c_id, s_name, s_mobile, s_email, s_username, s_pwd, s_address
+
+--> Fees Entity:  Attributes of fees are f_id, f_c_id, f_amount, f_total, f_payment, f_type, f_description
+
+--> Logins Entity:  Attributes of logins are l_id, l_user_id, l_role, l_username, l_pawd, l_lastlogin
+
+--> Profile Entity: Attributes of profile are p_id, p_name, p_type, p_description
+
+--> Courses Entity: Attributes of courses are c_id, c_s_id, c_registration, c_name, c_type, c_year, c_description
+
+--> Exams Entity: Attributes of Exams are e-id, e_s_id, e_roll, e_date, e_name, e_type, e_description
+
+Description of Students Management System Database :
+
+--> The detalis of Students is store into the Student tables respective with all table
+--> Each entity (Exams, Logins, Cources, Fees, Students)contains primary key and unique keys.
+--> The entity Logins, Cources has binded with Student, Fees entities with foreign key.
+--> There is one-to-one and one-to-many relationships available between Cources, Profiles, Exams, Students
+--> All the entities Students, Coueces, logins, Exams are normalized and reduce duplicacy of records
+--> We have implemented indexing on each table of Student Management System tables for fasr query execution

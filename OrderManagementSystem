@@ -1,0 +1,56 @@
+Order Processing System, Entities and there Attributes :
+
+
+->  Product Entity : attributes of product are
+      p_ID, 
+      p_c_ID, 
+      p_items, 
+      p_number, 
+      p_type, 
+      p_desc
+
+->  Customer Entity : attributes of customer are 
+      c_ID, 
+      c_name, 
+      c_mobile, 
+      c_email, 
+      c_address
+
+->  Order Entity :  attributes of Order are 
+      o_ID, 
+      o_c_ID, 
+      o_type, 
+      o_number, 
+      o_desc
+
+->  Bill Entity : attributes of bill are 
+      b_ID, 
+      b_C_ID,
+      b_number,
+      b_type,
+      b_receipt,
+      b_description
+      
+->  Company Entity : attributes of company are
+      cmp_ID,
+      cmp_name,
+      cmp_product_ID,
+      cmp_type,
+      cmp_desc,
+      cmp_address
+      
+->  Payment Entity : attributes of payment are
+      pay_ID,
+      pay_c_ID,
+      pay_date,
+      pay_amt,
+      pay_desc
+      
+Description of Order Processing System Database :
+
+>>  The details of Product is store into the Product tables respective with all tables
+>>  Each entity (Payment, Order, Company, Customer, Product) contains entities with foreign key
+>>  The enity Order, Company has binded with Product, Customer enities with foreign key
+>>  There is one-to-one and one-tomany relationship available between Company, Bill, payment, Product
+>>  All the entities Product, Company, Order, Payment are normalized and reduce duplicacy of records
+>>  WE have implemented indexing on each tables of Order Processing System tables for fast query execution
